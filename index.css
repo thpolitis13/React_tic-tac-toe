@@ -1,0 +1,100 @@
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b668d4;
+  padding: 100px;
+  border-radius: 110px;
+}
+
+.game-board {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.square {
+  background-color: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 164px;
+  width: 164px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.square:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.reset-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reset {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.reset:hover {
+  background-color: #3e8e41;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+
+/* Adjustments for icons */
+.icon {
+  font-size: 2em; /* Adjusts the icon size */
+}
+
+.square.X .icon {
+  color: #d33; /* Specific color for X */
+}
+
+.square.O .icon {
+  color: #33a; /* Specific color for O */
+}
+
